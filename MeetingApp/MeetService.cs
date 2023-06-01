@@ -183,6 +183,7 @@
             int deleteNumber;
             int.TryParse(Console.ReadLine(), out deleteNumber);
 
+            MeetList[deleteNumber].ReminderTimer.Dispose();
             MeetList.RemoveAt(deleteNumber);
             Console.Clear();
             Console.WriteLine($"Заметка {deleteNumber} удалена");

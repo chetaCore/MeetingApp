@@ -16,6 +16,7 @@
         public string Name { get => _name; set => _name = value; }
         public DateTime NotificationTime { get => _notificationTime;}
         public string MeetingContent { get => _meetingContent; set => _meetingContent = value; }
+        public Timer ReminderTimer { get => _reminderTimer;}
 
         public void SetNotificationTime(DateTime notificationTime)
         {
